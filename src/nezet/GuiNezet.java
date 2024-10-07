@@ -1,5 +1,6 @@
 package nezet;
 
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 public class GuiNezet extends javax.swing.JFrame {
@@ -13,7 +14,7 @@ public class GuiNezet extends javax.swing.JFrame {
     }
 
     public void visszajelzes(String uzenet) {
-        JOptionPane.showMessageDialog(rootPane, this, uzenet, HEIGHT);
+        JOptionPane.showMessageDialog(rootPane, uzenet);
     }
 
     public int bekeres() {
@@ -32,6 +33,10 @@ public class GuiNezet extends javax.swing.JFrame {
         }
 
         return valasztas;
+    }
+
+    public JButton getBtnValaszt() {
+        return btnValaszt;
     }
 
     @SuppressWarnings("unchecked")
